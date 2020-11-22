@@ -13,9 +13,7 @@ Vagrant.configure("2") do |config|
   apt update -y
   apt install -y make build-essential libssl-dev zlib1g-dev \
   libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev\
-  libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl\
-  git
-  chmod 777 /vagrant/setup.sh
+  libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
   EOT
 
   config.vm.provision "shell", privileged: false, inline: <<-EOT
